@@ -3,7 +3,7 @@ resource "aws_codedeploy_app" "web_app" {
   name = "simple-web-content"
 }
 
-# CodeDeploy 배포 그룹 생성
+# CodeDeploy 배포 그룹 생성 
 resource "aws_codedeploy_deployment_group" "web_deploy_group" {
   app_name               = aws_codedeploy_app.web_app.name
   deployment_group_name  = "simple-web-deploy-group"
