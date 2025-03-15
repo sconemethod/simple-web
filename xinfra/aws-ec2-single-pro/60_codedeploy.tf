@@ -21,7 +21,7 @@ resource "aws_codedeploy_deployment_group" "web_deploy_group" {
       value = "Production"
     }
   }
-
+#
   auto_rollback_configuration {
     enabled = true
     events  = ["DEPLOYMENT_FAILURE"]
