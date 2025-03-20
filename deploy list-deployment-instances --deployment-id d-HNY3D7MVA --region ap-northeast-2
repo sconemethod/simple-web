@@ -1,0 +1,44 @@
+deploymentInfo:
+  applicationName: simple-web-content
+  autoRollbackConfiguration:
+    enabled: true
+    events:
+    - DEPLOYMENT_FAILURE
+  completeTime: '2025-03-20T11:00:28.657000+09:00'
+  computePlatform: Server
+  createTime: '2025-03-20T11:00:22.548000+09:00'
+  creator: user
+  deploymentConfigName: CodeDeployDefault.OneAtATime
+  deploymentGroupName: simple-web-deploy-group
+  deploymentId: d-HNY3D7MVA
+  deploymentOverview:
+    Failed: 1
+    InProgress: 0
+    Pending: 0
+    Ready: 0
+    Skipped: 0
+    Succeeded: 0
+  deploymentStatusMessages: []
+  deploymentStyle:
+    deploymentOption: WITHOUT_TRAFFIC_CONTROL
+    deploymentType: IN_PLACE
+  errorInformation:
+    code: HEALTH_CONSTRAINTS
+    message: The overall deployment failed because too many individual instances failed
+      deployment, too few healthy instances are available for deployment, or some
+      instances in your deployment group are experiencing problems.
+  fileExistsBehavior: DISALLOW
+  ignoreApplicationStopFailures: false
+  instanceTerminationWaitTimeStarted: false
+  relatedDeployments: {}
+  revision:
+    revisionType: S3
+    s3Location:
+      bucket: simple-web-deploy-bucket-445567077599
+      bundleType: zip
+      key: deploy.zip
+  rollbackInfo:
+    rollbackMessage: No auto rollback triggered since no previous successful revision
+      found
+  status: Failed
+  updateOutdatedInstancesOnly: false
